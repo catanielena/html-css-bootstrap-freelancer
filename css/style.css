@@ -3,3 +3,58 @@
     --blue: #3a546d;
     --teal: #1abc9c;
 }
+
+/* common */
+body {
+    color: #fff;
+}
+
+ul {
+    list-style: none;
+}
+
+/* button */
+a {
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+}
+
+.btn {
+    background-color: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+}
+
+/* typo */
+h1, h2, h3, h4, h5, h6, 
+.uppercase {
+    text-transform: uppercase;
+}
+
+/* header */
+
+header{
+    height: 90px;
+    position: fixed;
+    width: 100%;
+    background-color:  var(--dark-blue);
+}
+
+header nav {
+    justify-items: flex-end;
+}
+
+header a {
+    line-height: 90px;
+    text-transform: uppercase;
+}
+
+header nav a {
+    margin-left: 2rem;
+}
+
+header li {
+    display: inline-block;
+}
+
