@@ -57,6 +57,7 @@ header{
     position: fixed;
     width: 100%;
     background-color:  var(--dark-blue);
+    z-index: 1;
 }
 
 header nav {
@@ -97,6 +98,10 @@ section {
     height: 3px;
     width: 200px;
     margin: 50px auto 40px;
+}
+
+.line--width--small {
+    width: 115px;
 }
 
 .line--bg--white {
@@ -140,6 +145,21 @@ section {
 }
 
 
+
+
+.about {
+    background-color: var(--teal);
+}
+
+.about__wrapper {
+    width: 90%;
+    margin: auto;
+}
+
+
+
+
+
 /* ≥ 768 */
 @media screen and (min-width: 768px) {
 
@@ -161,6 +181,10 @@ section {
         width: 350px;
     }
 
+    .line--width--small {
+        width: 250px;
+    }
+
 }
 
 /* ≥ 992 */
@@ -169,6 +193,10 @@ section {
    
         .line {
             width: 450px;
+        }
+
+        .line--width--small {
+            width: 375px;
         }
 
 }
