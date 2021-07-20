@@ -32,6 +32,16 @@ h1, h2, h3, h4, h5, h6,
     text-transform: uppercase;
 }
 
+h1 {
+    font-size: 2.5rem;
+}
+
+/* ≥ 768 */
+@media screen and (min-width: 768px) {
+    h1 {
+        font-size: 3.5rem;
+    }
+}
 /* header */
 
 header{
@@ -56,5 +66,54 @@ header nav a {
 
 header li {
     display: inline-block;
+}
+
+/* main*/
+main {
+    padding-top: 90px;
+}
+
+.hero {
+    background-color: var(--teal);
+    padding: 40px 0;
+}
+
+.hero-col__img{
+    margin-bottom: 25px;
+}
+
+.line {
+    height: 3px;
+    width: 40%;
+    background-color: #fff;
+    margin: 50px auto 40px;
+}
+
+.hero-col_subtitle {
+    font-size: 1.2rem;
+}
+
+/* ≥ 768 */
+@media screen and (min-width: 768px) {
+
+    /* hero */
+    .hero {
+        padding: 70px 0;
+    }
+
+    
+    .hero-col__img{
+        margin-bottom: 30px;
+    }
+
+    .hero-col_subtitle {
+        font-size: 1.5rem;
+    }
+
+}
+
+/* ≥ 992 */
+@media screen and (min-width: 768px) {
+
 }
 
