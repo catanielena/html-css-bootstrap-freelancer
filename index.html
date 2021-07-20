@@ -23,19 +23,30 @@
                         <a href="#">start boostrap</a>
                     </div>
                     <div class="col-6 col-sm-8 text-end align-items-center d-flex justify-content-end">
-                        <nav>
-                            <a class="btn align-middle d-inline-block d-sm-none">
-                                lorem
-                            </a>
-                            <ul class="d-none d-sm-inline-block">
-                                <li>
-                                    <a href="#">portfolio</a>
+                        <nav>                        
+                            <ul class="d-flex align-items-center">
+                                <li class="nav-item dropdown d-inline-block d-sm-none">
+                                    <a class="nav-link dropdown-toggle btn" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Dropdown
+                                      </a>
+                                      <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <li><a class="dropdown-item" href="#">portfolio</a></li>
+                                        <li><a class="dropdown-item" href="#">about</a></li>
+                                        <li><a class="dropdown-item" href="#">contact</a></li>
+                                      </ul>
                                 </li>
-                                <li>
-                                    <a href="#">about</a>
-                                </li>
-                                <li>
-                                    <a href="#">contact</a>
+                                <li class="d-none d-sm-inline-block">
+                                    <ul>
+                                        <li>
+                                            <a href="#">portfolio</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">about</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">contact</a>
+                                        </li>
+                                    </ul>
                                 </li>
                             </ul>
                         </nav>
@@ -111,7 +122,7 @@
 
             <!-- about -->
             <section class="about">
-                <div class="container-sm">
+                <div class="container-md">
                     <div class="row">
                         <div class="col-12 text-center">
                             <h2>about</h2>
@@ -146,7 +157,7 @@
 
             <!-- contact me -->
             <section class="contact-me">
-                <div class="container-sm">
+                <div class="container-md">
                     <div class="row">
                         <div class="col-12 text-center">
                             <h2>contact me</h2>

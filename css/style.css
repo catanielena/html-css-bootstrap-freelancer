@@ -87,6 +87,11 @@ header nav a {
     margin-left: 2rem;
 }
 
+header ul {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
 header li {
     display: inline-block;
 }
