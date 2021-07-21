@@ -33,6 +33,7 @@ ul {
     list-style: none;
 }
 
+
 /* button */
 button {
     background-color: transparent;
@@ -40,6 +41,7 @@ button {
     color: #fff;
     padding: 10px 15px;
     border-radius: 5px;
+    font-weight: 500;
 }
 
 a {
@@ -232,14 +234,19 @@ section .col__img{
     margin-right: 5px;
 }
 
- #contact-me {
+#contact-me {
     color: var(--blue);
- }
-
-.form {
-    height: 500px;
-    background-color: yellow;
 }
+
+.form-control {
+    border: none;
+    border-bottom: 1px solid #cccccc;
+    border-radius: 0;
+}
+input {
+    border: none;
+}
+
 
 
 /* ≥ 768 */
