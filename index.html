@@ -4,6 +4,11 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Almarai_Google-font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&display=swap" rel="stylesheet">
+        <!-- /Almarai_Google-font -->
         <!-- font-awesome -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <!-- /font-awesome -->
@@ -16,59 +21,85 @@
     <body>
 
         <!-- header -->
-        <header>
-            <div class="container-md">
+        <header class="bg_blue">
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <div class="container-fluid bg_blue">
+                  <a class="navbar-brand uppercase" href="#">start boostrap</a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                    <ul class="navbar-nav mb-2 mb-lg-0">
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">portfolio</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">about</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">contact</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </nav>
+            
+            </div>
+            
+            
+            <!-- <div class="container-md">
                 <div class="row">
+
                     <div class="col-6 col-sm-4">
                         <a href="#">start boostrap</a>
                     </div>
-                    <div class="col-6 col-sm-8 text-end align-items-center d-flex justify-content-end">
-                        <nav>                        
-                            <ul class="d-flex align-items-center">
-                                <li class="nav-item dropdown d-inline-block d-sm-none">
-                                    <a class="nav-link dropdown-toggle btn" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                        Dropdown
-                                      </a>
-                                      <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                        <li><a class="dropdown-item" href="#">portfolio</a></li>
-                                        <li><a class="dropdown-item" href="#">about</a></li>
-                                        <li><a class="dropdown-item" href="#">contact</a></li>
-                                      </ul>
-                                </li>
-                                <li class="d-none d-sm-inline-block">
-                                    <ul>
-                                        <li>
-                                            <a href="#">portfolio</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">about</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">contact</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </nav>
+
+                    <div class="col-6 col-sm-8 text-end d-flex justify-content-end">
+                        <ul class="nav d-flex align-items-center">
+                            <li class="nav-item dropdown d-inline-block d-sm-none">
+                                <a class="nav-link dropdown-toggle btn" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Dropdown
+                                  </a>
+                                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="#">portfolio</a></li>
+                                    <li><a class="dropdown-item" href="#">about</a></li>
+                                    <li><a class="dropdown-item" href="#">contact</a></li>
+                                  </ul>
+                            </li>
+                            <li class="d-none d-sm-inline-block">
+                                <ul>
+                                    <li>
+                                        <a href="#">portfolio</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">about</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">contact</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>                        
                     </div>
+
                 </div>
-            </div>
+            </div> -->
         </header>
         <!-- /header -->
 
         <!-- main -->
         <main>
             <!-- hero -->
-            <section class="hero">
+            <section  class="bg_teal" id="hero">
                 <div class="container-sm">
                     <div class="row">
-                        <div class="col text-center hero__hero-col">
-                            <div class="hero-col__img">
+                        <div class="col text-center ">
+                            <div class="col__img">
                                 <img src="https://via.placeholder.com/250" alt="">
                             </div>
                             <h1>start bootstrap</h1>
                             <div class="line line--bg--white"></div>
-                            <p class="uppercase hero-col_subtitle">lorem - lorem - lorem - lorem</p>
+                            <p class="uppercase col__subtitle">lorem - lorem - lorem - lorem</p>
                         </div>
                     </div>
                 </div>
@@ -76,78 +107,77 @@
             <!-- /hero -->
 
             <!-- portfolio -->
-            <section class="portfolio">
+            <section id="portfolio">
                 <div class="container-md">
                     <div class="row">
                         <div class="col-12 text-center">
                             <h2>portfolio</h2>
-                            <div class="line line--bg--dark-blue"></div>
+                            <div class="line line--bg--blue"></div>
                         </div>
-                        <div class="col-md-6 col-lg-4">
-                            <div class="portfolio__img img--border-radius">
+                        <div class="col-sm-6 col-lg-4">
+                            <div class="col__img img--border-radius">
                                 <img src="https://via.placeholder.com/250" alt="">
                             </div>
                         </div>
-                        <div class="col-md-6 col-lg-4">
-                            <div class="portfolio__img img--border-radius">
+                        <div class="col-sm-6 col-lg-4">
+                            <div class="col__img img--border-radius">
                                 <img src="https://via.placeholder.com/250" alt="">
                             </div>
                         </div>
-                        <div class="col-md-6 col-lg-4">
-                            <div class="portfolio__img img--border-radius">
+                        <div class="col-sm-6 col-lg-4">
+                            <div class="col__img img--border-radius">
                                 <img src="https://via.placeholder.com/250" alt="">
                             </div>
                         </div>
-                        <div class="col-md-6 col-lg-4">
-                            <div class="portfolio__img img--border-radius">
+                        <div class="col-sm-6 col-lg-4">
+                            <div class="col__img img--border-radius">
                                 <img src="https://via.placeholder.com/250" alt="">
                             </div>
                         </div>
-                        <div class="col-md-6 col-lg-4">
-                            <div class="portfolio__img img--border-radius">
+                        <div class="col-sm-6 col-lg-4">
+                            <div class="col__img img--border-radius">
                                 <img src="https://via.placeholder.com/250" alt="">
                             </div>
                         </div>
-                        <div class="col-md-6 col-lg-4">
-                            <div class="portfolio__img img--border-radius">
+                        <div class="col-sm-6 col-lg-4">
+                            <div class="col__img img--border-radius">
                                 <img src="https://via.placeholder.com/250" alt="">
                             </div>
                         </div>
-                        
-            
                     </div>
                 </div>
             </section>
             <!-- /portfolio -->
 
             <!-- about -->
-            <section class="about">
-                <div class="container-md">
-                    <div class="row">
-                        <div class="col-12 text-center">
-                            <h2>about</h2>
-                            <div class="line line--width--small line--bg--white"></div>
-                        </div>
-                        <div class="col-12">
-                            <div class="about__wrapper">
+            <section class="bg_teal" id="about">
+                <div class="wrapper">
+                    <div class="container-fuid">
+                        <div class="row">
+                            <div class="col-12 text-center">
+                                <h2>about</h2>
+                                <div class="line line--width--small line--bg--white"></div>
+                            </div>
+                            <div class="col-12">
+                                
                                 <div class="container-fluid">
                                     <div class="row">
-                                        <div class="col-md-6">
+                                        <div class="col-sm-6">
                                             <p class="about__p">
-                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, veritatis inventore! Maiores, incidunt aliquam architecto temporibus corporis excepturi maxime harum vero cumque nesciunt laborum iste aut odit at, ipsum optio!
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde,veritatis inventore! Maiores, incidunt aliquam architectotemporibus corporis excepturi maxime harum vero cumque nesciuntlaborum iste aut odit at, ipsum optio!
                                             </p>
                                         </div>
-                                        <div class="col-md-6">
+                                        <div class="col-sm-6">
                                             <p class="about__p">
-                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, veritatis inventore! Maiores, incidunt aliquam architecto temporibus corporis excepturi maxime harum vero cumque nesciunt laborum iste aut odit at, ipsum optio!
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde,veritatis inventore! Maiores, incidunt aliquam architectotemporibus corporis excepturi maxime harum vero cumque nesciuntlaborum iste aut odit at, ipsum optio!
                                             </p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-12 text-center">
-                            <a href="#" class="btn">lorem</a>
+                            <div class="col-12 text-center">
+                                <a href="#" class="btn">lorem</a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -156,15 +186,15 @@
             <!-- /about -->
 
             <!-- contact me -->
-            <section class="contact-me">
-                <div class="container-md">
-                    <div class="row">
-                        <div class="col-12 text-center">
-                            <h2>contact me</h2>
-                            <div class="line line--width--small line--bg--dark-blue"></div>
-                        </div>
-                        <div class="col-12">
-                            <div class="about__wrapper">
+            <section id="contact-me">
+                <div class="wrapper">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-12 text-center">
+                                <h2>contact me</h2>
+                                <div class="line line--width--small line--bg--blue"></div>
+                            </div>
+                            <div class="col-12">
                                 <div class="container-fluid">
                                     <div class="row">
                                         <div class="form"></div>
@@ -186,58 +216,54 @@
         <footer>
 
             <!-- footer-top -->
-            <section class="footer-top">
+            <section class="footer-top bg_blue_300 ">
                 <div class="container-md text-center">
                     <div class="row">
-                        <div class="col-md-4 footer-top__col--margin">
+
+                        <div class="col-sm-4 footer-top__col--margin">
                             <h6>location</h6>
                             <p>2215 John Daniel rive Clark, MO 54253</p>
                         </div>
-                        <div class="col-md-4 footer-top__col--margin">
+
+                        <div class="col-sm-4 footer-top__col--margin">
                             <h6>around the web</h6>
-                            <ul class="top__social-list">
+                            <ul class="top__social-list d-flex">
                                 <li>
-                                    <a href="" class="btn btn--circle social-list__btn">
+                                    <a href="" class="ms_btn btn--circle social-list__btn">
                                         <i class="fab fa-facebook-f"></i>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="" class="btn btn--circle social-list__btn">
+                                    <a href="" class="ms_btn btn--circle social-list__btn">
                                         <i class="fab fa-facebook-f"></i>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="" class="btn btn--circle social-list__btn">
+                                    <a href="" class="ms_btn btn--circle social-list__btn">
                                         <i class="fab fa-facebook-f"></i>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="" class="btn btn--circle social-list__btn">
+                                    <a href="" class="ms_btn btn--circle social-list__btn">
                                         <i class="fab fa-facebook-f"></i>
                                     </a>
                                 </li>
                             </ul>
-
                         </div>
-                        <div class="col-md-4">
+
+                        <div class="col-sm-4">
                             <h6>about freelancer</h6>
                             <p>Freelancer is a free to use, open source Boostrap theme created by <a href="" class="btn--color--teal">Start Bootstrap</a></p>
-
                         </div>
+
                     </div>
                 </div>
             </section>
             <!-- /footer-top -->
 
             <!-- footer-bottom -->
-            <section class="footer-bottom">
-                <div class="container-md text-center">
-                    <div class="row">
-                        <div class="col-12">
-                            <span class="copyright">Copyright &copy; Yout Website 2019</span>
-                        </div>
-                    </div>
-                </div>
+            <section class="footer-bottom bg_blue text-center">
+                <small>Copyright &copy; Yout Website 2019</small>
             </section>
             <!-- /footer-bottom -->
 
