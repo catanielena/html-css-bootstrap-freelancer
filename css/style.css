@@ -111,7 +111,8 @@ header{
 
 .nav-link {
     font-weight: 700;
-    line-height:initial;
+    line-height: initial;
+    vertical-align: middle;
 }
 
 .navbar-dark .navbar-toggler {
@@ -157,14 +158,37 @@ section .col__img{
     margin-bottom: 25px;
 }
 
-.line {
-    height: 3px;
-    width: 200px;
-    margin: 50px auto 40px;
+
+#hero .col__img {
+    width: 225px;
+    margin: 0 auto 25px;
 }
 
-.line--width--small {
+.col__img img {
+    width: 100%;
+}
+
+.divisor {
+    margin: 25px auto 10px;
+    vertical-align: middle;
+}
+
+.divisor--small {
     width: 115px;
+}
+
+.divisor--large {
+    width: 200px;
+}
+
+.star {
+    font-size: 2rem;
+    margin: 0 5px;
+}
+
+.line {
+    height: 3px;
+    flex-grow: 1;
 }
 
 .line--bg--white {
@@ -235,11 +259,11 @@ section .col__img{
         font-size: 1.5rem;
     }
 
-    .line {
+    .divisor--large {
         width: 350px;
     }
 
-    .line--width--small {
+    .divisor--small {
         width: 250px;
     }
 
@@ -249,11 +273,11 @@ section .col__img{
 @media screen and (min-width: 768px) {
         /* hero */
    
-        .line {
+        .divisor--large {
             width: 450px;
         }
 
-        .line--width--small {
+        .divisor--small {
             width: 375px;
         }
 
